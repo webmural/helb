@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+:any-link {
+  border-radius: 100%;
+  display: inline-flex;
+  margin: 1em;
+  text-decoration-style: dotted;
+}
+
+:hover {
+  text-decoration-style: wavy;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: max(3ch, 2vmax + 2vmin);
+  line-height: 2;
+}
+
+body {
+  margin: 3em auto 2em;
+  overflow-wrap: anywhere;
+}
+
+article {
+  display: flex;
+  flex-flow: column;
+}
+
+.puppeyess {
+  align-items: stretch;
+  contain: layout;
+  justify-items: space-around;
+  font-size: 1em;
+  display: flex;
+  margin: 0 1em;
+}
+
+.flowerboi {
+  align-items: center;
+  contain: layout;
+  display: flex;
+  flex-flow: column;
+  padding: 3ch;
+}
+
+.flowerboi a {
+  padding: 1em;
+}
+
+.flowerboi li {
+  display: contents;
+}
+
+.compound {
+  font-size: 2rem;
+  margin-top: 5rem;
+/*   writing-mode: vertical-lr; */
+  padding: 1em;
+  position: relative;
+  top: 1em;
+}
+
+.compound:first-child {
+  margin-right: auto;
+  border-radius: 30% 80%;
+  transform: rotate(-3deg);
+}
+
+.compound:last-child {
+  margin-left: auto;
+  border-radius: 80% 30%;
+  transform: rotate(3deg);
+}
+
+.ocelli {
+  font-size: 3rem;
+  transform: rotate(180deg);
+  margin-bottom: 1rem;
+  position: relative;
+  padding: 1ch;
+  top: -1em;
+}
+
+.belay {
+  contain: layout;
+  margin: auto;
+  transform: rotate(9deg);
+}

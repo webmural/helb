@@ -1,0 +1,47 @@
+::selection {
+  background: darkmagenta;
+  color: powderblue;
+}
+
+:any-link {
+  --resin: unset;
+  background: var(--resin);
+  box-shadow: 0 0 1ex 1ex thistle;
+  color: inherit;
+  transition: 333ms ease-out;
+}
+
+:nth-child(1n) { --resin: #ed3 }
+:nth-child(2n) { --resin: #edc }
+:nth-child(3n) { --resin: #8ee }
+:only-child { --resin: #ec0 }
+
+:focus {
+  filter: hue-rotate(-36deg);
+  outline: .2ch double;
+}
+
+:active {
+  filter: hue-rotate(-18deg);
+}
+
+html {
+  background: mediumpurple;
+  background-image: linear-gradient(
+    .3turn,
+    transparent 0%,
+    violet 62%
+  );
+  color: #0e0e0e;
+  transition: 200ms ease;
+}
+
+.ocelli {
+  color: #eeb;
+  background: rebeccapurple;
+}
+
+.compound {
+  color: #eeb;
+  background: rebeccapurple;
+}
